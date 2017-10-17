@@ -23,7 +23,7 @@ $ kontena local remove
 
 ## Contributing
 
-1. Fork it ( https://github.com/kontena/kontena-plugin-docker )
+1. Fork it ( https://github.com/kontena/kontena-plugin-local )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
