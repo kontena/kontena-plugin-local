@@ -3,7 +3,11 @@ require 'docker'
 class Kontena::Plugin::Local::RemoveCommand < Kontena::Command
   include Kontena::Cli::Common
 
+  option "--force", :flag, "Force remove", default: false, attribute_name: :forced
+
   def execute
+    confirm_command('local-kontena') unless forced?
+
     remove_container('kontena-master-api')
     remove_container('kontena-master-mongo')
     remove_container('kontena-agent')
