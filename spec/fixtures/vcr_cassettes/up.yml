@@ -1,0 +1,1121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-mongo/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '40'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:33 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-mongo
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:30 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-mongo/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '40'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:33 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-mongo
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:30 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-mongo/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '40'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:33 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-mongo
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:30 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-mongo/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '40'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:33 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-mongo
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:30 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/images/create?fromImage=mongo:3.2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:35 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling from library/mongo\",\"id\":\"3.2\"}\r\n{\"status\":\"Digest:
+        sha256:30f44f2960b2c5d14b7161e4070404acdee4edda2d0e85bac2f35f33d81f9c29\"}\r\n{\"status\":\"Status:
+        Image is up to date for mongo:3.2\"}\r\n"
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:32 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/images/mongo:3.2/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:36 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"sha256:16dc6ae8085ee1891242caae955e14251caa72415e678063203ead560023d28d","RepoTags":["mongo:3.2"],"RepoDigests":["mongo@sha256:30f44f2960b2c5d14b7161e4070404acdee4edda2d0e85bac2f35f33d81f9c29"],"Parent":"","Comment":"","Created":"2017-10-10T00:03:05.139222623Z","Container":"232a99a988e8b0384332c633903c104b698d1ca0dec91c0ccede74f3299fd968","ContainerConfig":{"Hostname":"232a99a988e8","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"27017/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","GOSU_VERSION=1.7","GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
+        \t42F3E95A2C4F08279C4960ADD68FA50FEA312927","MONGO_PACKAGE=mongodb-org","MONGO_REPO=repo.mongodb.org","MONGO_MAJOR=3.2","MONGO_VERSION=3.2.17"],"Cmd":["/bin/sh","-c","#(nop)
+        ","CMD [\"mongod\"]"],"ArgsEscaped":true,"Image":"sha256:877a49a155a7f8063a9caacb48eb14cb166bb7004733b347698578026b7a85bd","Volumes":{"/data/configdb":{},"/data/db":{}},"WorkingDir":"","Entrypoint":["docker-entrypoint.sh"],"OnBuild":[],"Labels":{}},"DockerVersion":"17.06.2-ce","Author":"","Config":{"Hostname":"","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"27017/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","GOSU_VERSION=1.7","GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
+        \t42F3E95A2C4F08279C4960ADD68FA50FEA312927","MONGO_PACKAGE=mongodb-org","MONGO_REPO=repo.mongodb.org","MONGO_MAJOR=3.2","MONGO_VERSION=3.2.17"],"Cmd":["mongod"],"ArgsEscaped":true,"Image":"sha256:877a49a155a7f8063a9caacb48eb14cb166bb7004733b347698578026b7a85bd","Volumes":{"/data/configdb":{},"/data/db":{}},"WorkingDir":"","Entrypoint":["docker-entrypoint.sh"],"OnBuild":[],"Labels":null},"Architecture":"amd64","Os":"linux","Size":301290163,"VirtualSize":301290163,"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/c606712fe85d27f0eaf2b2b6e68b686b967610da262c230b954f90ea496662e4/diff:/var/lib/docker/overlay2/ea056c0ad864325ecc7a60a551c0d9e869540570e0b42a6e35633a9c1e2ca88b/diff:/var/lib/docker/overlay2/c76a367651e8e27f9641c6f946a7d46aa017b68248fdc7c28f3e39a385f19f50/diff:/var/lib/docker/overlay2/59e7a37c90734653e8772dfd9e3ccd584fef1830493fc72076d0bd8b8900d6e3/diff:/var/lib/docker/overlay2/99b42d0a208209685e2a688f333cf0a59c83d35586090b183afbece0aa529b99/diff:/var/lib/docker/overlay2/40d7a5e8434250b058aefb4292d0b3c3352a3dfcbe070acab39de38d56f547c0/diff:/var/lib/docker/overlay2/ac3d1e9c08cf393f8f91f46492ae5c2e537a9eb4eccfc35568ec4365acbbcf95/diff:/var/lib/docker/overlay2/f699d4aba2b6506c67c84c94b57098e22d0deca149602571d47e2fd4c1485869/diff:/var/lib/docker/overlay2/0d85741f7257e7ad6dcc87abef87b79dea30f80df46404153cdfdb42a80aa89d/diff:/var/lib/docker/overlay2/f3319fd76ccb9e99b66717aa35f690e9b1d1a100eb0b571d3378a796943dc9ce/diff","MergedDir":"/var/lib/docker/overlay2/1160bdc6e6172a4b799a68230a7e2ea490a4baccad3fb871ef56603c050466eb/merged","UpperDir":"/var/lib/docker/overlay2/1160bdc6e6172a4b799a68230a7e2ea490a4baccad3fb871ef56603c050466eb/diff","WorkDir":"/var/lib/docker/overlay2/1160bdc6e6172a4b799a68230a7e2ea490a4baccad3fb871ef56603c050466eb/work"},"Name":"overlay2"},"RootFS":{"Type":"layers","Layers":["sha256:29d71372a4920ec230739a9e2317e7e9b18644edb10f78cde85df85e6ab85fc2","sha256:76029b7a6a58d144355e1fc89c99ee581c4b326f7ebe3cafc52ea21b42461c22","sha256:a642b018c7c1e05f7a44d412ab747451a104ff124bc0cd51ec7167e51c9dc274","sha256:aaa0c11664e4c4ba661023fef741c4bf6ebcfc8166ebf2c682caffaa8e962d3c","sha256:c3ea9e3e02a2b43b88d8aaee8af69a4e35d0b97f5633b6a6f9cfbe197dcef213","sha256:251df162332197b4735d66f2fc8ec9c11f9d35cd6dfd93af0228340da485a70b","sha256:cdbefb3cee03abc0a4c6ae4a95dd121eadd3fc2091c2ddf679deb445a1d9b91a","sha256:9f59d7f794006fe26908a7e8cb52cdfd605424d839f2cfbe5316ca9eb1f696c7","sha256:0db27a53517cf283e3889f54c1db4e8924b3f5392c637a4abf5aef496f4d6005","sha256:598aabd72e26800519c714ad5608ad536e076ecc54bfc7fea4c16cce44d327f1","sha256:8306d8d917976af33075bfc757156c3d768afb2e4e4eba96a69ab08adfe8bc20"]},"Metadata":{"LastTagTime":"0001-01-01T00:00:00Z"}}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:32 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/create?name=kontena-master-mongo
+    body:
+      encoding: UTF-8
+      string: '{"Image":"mongo:3.2","Volumes":{"/data/db":{}},"HostConfig":{"Binds":["kontena-master-db:/data/db"],"RestartPolicy":{"Name":"unless-stopped"}}}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:36 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"74eb26bd4dc56322d8a4597de2523abbcfe821a8b17ff076a3253a78fa8c2098","Warnings":null}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:32 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/74eb26bd4dc56322d8a4597de2523abbcfe821a8b17ff076a3253a78fa8c2098/start
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 05:57:37 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:33 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-api/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:37 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-api
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:33 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-api/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:37 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-api
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:33 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-api/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:37 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-api
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:33 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-api/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:57:37 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-master-api
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:33 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/images/create?fromImage=kontena/server:latest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:38 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling from kontena/server\",\"id\":\"latest\"}\r\n{\"status\":\"Digest:
+        sha256:175ff5fb2fe2d8b3891b86ce6b747ad4300e5ea8508d6648d952f192e88e5ee3\"}\r\n{\"status\":\"Status:
+        Image is up to date for kontena/server:latest\"}\r\n"
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:34 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/images/kontena/server:latest/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:38 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"sha256:68d447c261715d1537829358b5d474566e00a16add0862560cdb8b0e6f1a2f40","RepoTags":["kontena/server:latest"],"RepoDigests":["kontena/server@sha256:175ff5fb2fe2d8b3891b86ce6b747ad4300e5ea8508d6648d952f192e88e5ee3"],"Parent":"","Comment":"","Created":"2017-10-16T12:37:31.416055151Z","Container":"78fb598f72c0234929b59f31ea643f562aeed24ec9281958ccc0f4a497c43240","ContainerConfig":{"Hostname":"eef737a10a16","Domainname":"","User":"nobody","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"9292/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","RACK_ENV=production"],"Cmd":["/bin/sh","-c","#(nop)
+        ","CMD [\"./run.sh\"]"],"ArgsEscaped":true,"Image":"sha256:6cbf5f57effbac68706c0b20c7903a77e458faa2813282bb842c7c9498f97e21","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"OnBuild":[],"Labels":{}},"DockerVersion":"17.03.1-ce","Author":"Kontena,
+        Inc. <info@kontena.io>","Config":{"Hostname":"eef737a10a16","Domainname":"","User":"nobody","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"9292/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","RACK_ENV=production"],"Cmd":["./run.sh"],"ArgsEscaped":true,"Image":"sha256:6cbf5f57effbac68706c0b20c7903a77e458faa2813282bb842c7c9498f97e21","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"OnBuild":[],"Labels":{}},"Architecture":"amd64","Os":"linux","Size":86890279,"VirtualSize":86890279,"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/16dd61b9073fbdfa8f7bd9baa45eff4cd9108681fbc5aa4a477980b47dac128a/diff:/var/lib/docker/overlay2/34126f5e82d3151778286ad292682b9059d942023ee59cf2e54bf206386593a8/diff:/var/lib/docker/overlay2/1ed1b9c4ca90ea8e21b98be933b1a307c9945e60428cd98df7513bac7dba626e/diff:/var/lib/docker/overlay2/6c73bb7a3da281e6957fe2cb022550f99111f4b4827478a6b22de196e89e99de/diff","MergedDir":"/var/lib/docker/overlay2/ad8382263c5d1dc43b99e041155cd74b3a71811b0a00ec6aefb1d6036f9d5bfc/merged","UpperDir":"/var/lib/docker/overlay2/ad8382263c5d1dc43b99e041155cd74b3a71811b0a00ec6aefb1d6036f9d5bfc/diff","WorkDir":"/var/lib/docker/overlay2/ad8382263c5d1dc43b99e041155cd74b3a71811b0a00ec6aefb1d6036f9d5bfc/work"},"Name":"overlay2"},"RootFS":{"Type":"layers","Layers":["sha256:5bef08742407efd622d243692b79ba0055383bbce12900324f75e56f589aedb0","sha256:2091694629538f9b9bce948e46e948bedd32519af8e9bb3a2f6a71ca870ce0d6","sha256:2216ca94c3b605b47eb55e61cbcfb31567a5ede9b11171754e8fd6981277b9ad","sha256:3d7993525c42163f297e758249be9678dc4829626bc94af4436686ce7fabcc1f","sha256:08775e252d52e9ceb54ead2786cd70e0c0f30aca47fecc9a5f7fbe540476f004"]},"Metadata":{"LastTagTime":"0001-01-01T00:00:00Z"}}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:34 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/create?name=kontena-master-api
+    body:
+      encoding: UTF-8
+      string: '{"Image":"kontena/server:latest","Env":["MONGODB_URI=mongodb://mongodb:27017/kontena_server","VAULT_KEY=0af32987ce90b27772f652fbf0ad5c9755d9d1e1ce37ea25","VAULT_IV=17d18dfdd69603b4a451bf5490e89ed2d37c934ffd7a49a4","INITIAL_ADMIN_CODE=initialadmincode","CONTAINER_LOGS_CAPPED_SIZE=128","CONTAINER_STATS_CAPPED_SIZE=64","EVENT_LOGS_CAPPED_SIZE=32","WEB_CONCURRENCY=1"],"ExposedPorts":{"9292/tcp":{}},"HostConfig":{"Links":["kontena-master-mongo:mongodb"],"PortBindings":{"9292/tcp":[{"HostPort":"8181"}]},"RestartPolicy":{"Name":"unless-stopped"}}}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:57:38 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"950a5966a6c05dccb8e48959446438712d6dbdb2a6a48a057c185e04cb77f5ce","Warnings":null}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:35 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/950a5966a6c05dccb8e48959446438712d6dbdb2a6a48a057c185e04cb77f5ce/start
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 05:57:39 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:35 GMT
+- request:
+    method: get
+    uri: http://localhost:8181/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.49.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Kontena-Version:
+      - 1.4.0
+      Content-Length:
+      - '78'
+    body:
+      encoding: UTF-8
+      string: '{"name":"Kontena Master","tagline":"The Container Platform","version":"1.4.0"}'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:54 GMT
+- request:
+    method: post
+    uri: http://localhost:8181/oauth2/token
+    body:
+      encoding: UTF-8
+      string: '{"grant_type":"authorization_code","code":"initialadmincode","client_id":"15faec8a7a9b4f1e8b7daebb1307f1d8","client_secret":"fb8942ae00da4c7b8d5a1898effc742f"}'
+    headers:
+      User-Agent:
+      - kontena-cli/1.4.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '159'
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      X-Kontena-Version:
+      - 1.4.0
+      Content-Length:
+      - '356'
+    body:
+      encoding: UTF-8
+      string: '{"id":"59e6ed66421d2f00074499b6","token_type":"bearer","access_token":"c81a1cbfbb0ff6ff7b68bd7532e914d01ff3e1975bf3d8c1469a58cfc76ccbc8","refresh_token":null,"access_token_last_four":"cbc8","refresh_token_last_four":null,"expires_in":null,"scopes":"user,owner","user":{"id":"59e6ed64421d2f00074499a1","email":"admin","name":"admin"},"server":{"name":null}}'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:54 GMT
+- request:
+    method: post
+    uri: http://localhost:8181/v1/grids
+    body:
+      encoding: UTF-8
+      string: '{"name":"local-kontena","token":"625582eee26921bc617ed774a09e0ca6","initial_size":1}'
+    headers:
+      User-Agent:
+      - kontena-cli/1.4.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer c81a1cbfbb0ff6ff7b68bd7532e914d01ff3e1975bf3d8c1469a58cfc76ccbc8
+      Content-Length:
+      - '84'
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      X-Kontena-Version:
+      - 1.4.0
+      Content-Length:
+      - '290'
+    body:
+      encoding: UTF-8
+      string: '{"id":"local-kontena","name":"local-kontena","token":"625582eee26921bc617ed774a09e0ca6","initial_size":1,"stats":{"statsd":null},"default_affinity":[],"trusted_subnets":[],"node_count":0,"service_count":0,"container_count":0,"user_count":1,"subnet":"10.81.0.0/16","supernet":"10.80.0.0/12"}'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:54 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/images/create?fromImage=kontena/agent:latest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling from kontena/agent\",\"id\":\"latest\"}\r\n{\"status\":\"Digest:
+        sha256:502a4b335a052974ba80132c055df12c2d13811cf185a625b409b992515ae88b\"}\r\n{\"status\":\"Status:
+        Image is up to date for kontena/agent:latest\"}\r\n"
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/images/kontena/agent:latest/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"sha256:948a132209c0529de0f713ba83bc299f71c50c917c94635a408d884273d117a6","RepoTags":["kontena/agent:latest"],"RepoDigests":["kontena/agent@sha256:502a4b335a052974ba80132c055df12c2d13811cf185a625b409b992515ae88b"],"Parent":"","Comment":"","Created":"2017-10-16T12:39:34.216126111Z","Container":"02e8867a64bdf67957f296286ef914757e3a8a1a0bfbd92794042c4486837830","ContainerConfig":{"Hostname":"85b0d5c0080a","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],"Cmd":["/bin/sh","-c","#(nop)
+        ","CMD [\"/app/bin/kontena-agent\"]"],"ArgsEscaped":true,"Image":"sha256:e2131743b38342c9d539954d816f7135f8ec38793bad8c077074484f47272ca0","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"OnBuild":[],"Labels":{}},"DockerVersion":"17.03.1-ce","Author":"Kontena,
+        Inc. <info@kontena.io>","Config":{"Hostname":"85b0d5c0080a","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],"Cmd":["/app/bin/kontena-agent"],"ArgsEscaped":true,"Image":"sha256:e2131743b38342c9d539954d816f7135f8ec38793bad8c077074484f47272ca0","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"OnBuild":[],"Labels":{}},"Architecture":"amd64","Os":"linux","Size":71146568,"VirtualSize":71146568,"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/18f3341f4c0e1b95b2fda8eda66af41e004d0e0c7bfd4d893f154523bf3fa678/diff:/var/lib/docker/overlay2/67db2999a6e266cb56b95972c85af117c4cb6c2587523010e8dc658833b494e7/diff:/var/lib/docker/overlay2/79b6a6df73a4f4e40b6ea38d98ce197f28197fc13db9608d335151655c45b877/diff:/var/lib/docker/overlay2/b26cbf871c799b80ca3345053a72e4c847c45ec3401186ab605b5e05be1b9069/diff:/var/lib/docker/overlay2/6c73bb7a3da281e6957fe2cb022550f99111f4b4827478a6b22de196e89e99de/diff","MergedDir":"/var/lib/docker/overlay2/1529c12d6cb8a37b8f93b50aaa80a89db51c9f6a46de94b0fca41114ea0fd973/merged","UpperDir":"/var/lib/docker/overlay2/1529c12d6cb8a37b8f93b50aaa80a89db51c9f6a46de94b0fca41114ea0fd973/diff","WorkDir":"/var/lib/docker/overlay2/1529c12d6cb8a37b8f93b50aaa80a89db51c9f6a46de94b0fca41114ea0fd973/work"},"Name":"overlay2"},"RootFS":{"Type":"layers","Layers":["sha256:5bef08742407efd622d243692b79ba0055383bbce12900324f75e56f589aedb0","sha256:258ebac5ca43c81b13f21d38a2e359db273f45a4d25f34b94f29571e5b01fb91","sha256:cea48a8f91331042834ba64f4814c6d9d6beef196082feff3c9597e74e668ad4","sha256:7d3bd869e9bae11a074f464ad7ecec1b75a4c49c9c4859e7fa932a447bc3ced4","sha256:8d94f45ccf11067a4fa5d045986c14988bd58aee6f5ba1d487ad59775e865569","sha256:2c8cdd4bdce5f83e464eb5c703eac8e20be0b98c2e008304074c73323179844a"]},"Metadata":{"LastTagTime":"0001-01-01T00:00:00Z"}}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/create?name=kontena-agent
+    body:
+      encoding: UTF-8
+      string: '{"Image":"kontena/agent:latest","Env":["KONTENA_URI=http://localhost:8181","KONTENA_TOKEN=625582eee26921bc617ed774a09e0ca6","CADVISOR_IMAGE=google/cadvisor","CADVISOR_VERSION=v0.26.1"],"Volumes":{"/var/run/docker.sock":{}},"HostConfig":{"Binds":["/var/run/docker.sock:/var/run/docker.sock"],"NetworkMode":"host","RestartPolicy":{"Name":"unless-stopped"}}}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"4d5a3619dc9989ec475a19154ba2b7a2e12ce7637e4127a0fd6768099b3ac6dc","Warnings":null}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/4d5a3619dc9989ec475a19154ba2b7a2e12ce7637e4127a0fd6768099b3ac6dc/start
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-registry/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '36'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-registry
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-registry/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '36'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-registry
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-registry/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '36'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-registry
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-registry/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '36'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 18 Oct 2017 05:58:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: 'No such container: kontena-registry
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:56 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/images/create?fromImage=kontena/registry:2.6.2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling from kontena/registry\",\"id\":\"2.6.2\"}\r\n{\"status\":\"Digest:
+        sha256:284630d65a8b607b706db7b565378928e0771aecb11b101f23d84f6271a07239\"}\r\n{\"status\":\"Status:
+        Image is up to date for kontena/registry:2.6.2\"}\r\n"
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:58 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/images/kontena/registry:2.6.2/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"sha256:119bdf21a7fc9810b71e4762b5839e9dfa6f908c55bb24b870c436b7dcd10a11","RepoTags":["kontena/registry:2.6.2"],"RepoDigests":["kontena/registry@sha256:284630d65a8b607b706db7b565378928e0771aecb11b101f23d84f6271a07239"],"Parent":"sha256:67344c9b9161fa23a70b56964144c0e14d1861a7e715f45aaf71fb73cf1b15ca","Comment":"","Created":"2017-07-22T12:14:45.881901062Z","Container":"406b2f4b6481f557221334da6205f37492f39e938ca71d5129e69549fd062978","ContainerConfig":{"Hostname":"498faf5af77a","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"5000/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","REGISTRY_STORAGE_DELETE_ENABLED=true"],"Cmd":["/bin/sh","-c","#(nop)
+        ADD file:b97063caffc58cca6f24a3d4334c9dfff8696d08e7920a9229d4eb38a747dc35
+        in /entrypoint.sh "],"ArgsEscaped":true,"Image":"sha256:67344c9b9161fa23a70b56964144c0e14d1861a7e715f45aaf71fb73cf1b15ca","Volumes":{"/var/lib/registry":{}},"WorkingDir":"","Entrypoint":["/entrypoint.sh"],"OnBuild":[],"Labels":{}},"DockerVersion":"17.06.0-ce","Author":"","Config":{"Hostname":"498faf5af77a","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"5000/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","REGISTRY_STORAGE_DELETE_ENABLED=true"],"Cmd":["/etc/docker/registry/config.yml"],"ArgsEscaped":true,"Image":"sha256:67344c9b9161fa23a70b56964144c0e14d1861a7e715f45aaf71fb73cf1b15ca","Volumes":{"/var/lib/registry":{}},"WorkingDir":"","Entrypoint":["/entrypoint.sh"],"OnBuild":[],"Labels":{}},"Architecture":"amd64","Os":"linux","Size":33210860,"VirtualSize":33210860,"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/358ddd5ed7559191db259361c2c84741e344a8ac8174b1d6086c114101a23c0f/diff:/var/lib/docker/overlay2/c8d51a2c19cf4fdbc0362d4d68306022c5bc8bb307fbb5afcd8cfd9961b6cd91/diff:/var/lib/docker/overlay2/ef6dfee6fac6c15d04f4f691209a16f53d459438584278e0e88769e3d28de032/diff:/var/lib/docker/overlay2/4d793e2792303e119a65f44884b823755a8c458b1c31a95f6360a1c375ec1b0b/diff:/var/lib/docker/overlay2/901fcc9b594a0fe29d9e1e1f53a75e97ac36f8a42eaceeda15c9af05e9f72fe8/diff","MergedDir":"/var/lib/docker/overlay2/db883d7e6c140fb6dc7a0445b8eea0c2af278abf8d2e5401b393476bdf985370/merged","UpperDir":"/var/lib/docker/overlay2/db883d7e6c140fb6dc7a0445b8eea0c2af278abf8d2e5401b393476bdf985370/diff","WorkDir":"/var/lib/docker/overlay2/db883d7e6c140fb6dc7a0445b8eea0c2af278abf8d2e5401b393476bdf985370/work"},"Name":"overlay2"},"RootFS":{"Type":"layers","Layers":["sha256:2b0fb280b60dad0c3e2f6b207ef0d8f6a04f09638d245d3a2fdf0d6933e734d6","sha256:05d392f56700586e416bf282571afb8d91b563471d3f6cb7662115575a78b924","sha256:32f085a1e7bb4838f9c142a8696e8658dda8e0ccef0cd2c66b508a1a0f5ec26e","sha256:e23ed9242cd7a3120865d555574c69c6f50d71ad30668ff13712730adcefd600","sha256:2bf5fdee0818c5212888e854546fd7dd9eb3d120e699e983d825dd96c1686b35","sha256:5c2f60be21bc08ae278cdeaaa70b264343df9643fe3e9efa4254e3fcdd04ec0d"]},"Metadata":{"LastTagTime":"0001-01-01T00:00:00Z"}}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:58 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/create?name=kontena-registry
+    body:
+      encoding: UTF-8
+      string: '{"Image":"kontena/registry:2.6.2","ExposedPorts":{"5000/tcp":{}},"HostConfig":{"PortBindings":{"5000/tcp":[{"HostPort":"5000"}]},"RestartPolicy":{"Name":"unless-stopped"}}}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 05:58:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"304395a3e04f1d7ab6d7109697122aa946ab2168af9203fb728ac62314bca5b5","Warnings":null}
+
+'
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:58 GMT
+- request:
+    method: post
+    uri: http://unix/v1.16/containers/304395a3e04f1d7ab6d7109697122aa946ab2168af9203fb728ac62314bca5b5/start
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 05:58:03 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 18 Oct 2017 05:57:59 GMT
+recorded_with: VCR 3.0.3

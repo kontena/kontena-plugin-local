@@ -1,0 +1,674 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-api/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:10:58 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377","Created":"2017-10-18T06:09:18.557644844Z","Path":"./run.sh","Args":[],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":10332,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:19.272080556Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:68d447c261715d1537829358b5d474566e00a16add0862560cdb8b0e6f1a2f40","ResolvConfPath":"/var/lib/docker/containers/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377/resolv.conf","HostnamePath":"/var/lib/docker/containers/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377/hostname","HostsPath":"/var/lib/docker/containers/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377/hosts","LogPath":"/var/lib/docker/containers/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377-json.log","Name":"/kontena-master-api","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":null,"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"default","PortBindings":{"9292/tcp":[{"HostIp":"","HostPort":"8181"}]},"RestartPolicy":{"Name":"unless-stopped","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":["/kontena-master-mongo:/kontena-master-api/mongodb"],"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/b450e21916d2c3f9e08e7d53ebe38f9eaf87f0d4ca775b70732dc3bcace6cc12-init/diff:/var/lib/docker/overlay2/ad8382263c5d1dc43b99e041155cd74b3a71811b0a00ec6aefb1d6036f9d5bfc/diff:/var/lib/docker/overlay2/16dd61b9073fbdfa8f7bd9baa45eff4cd9108681fbc5aa4a477980b47dac128a/diff:/var/lib/docker/overlay2/34126f5e82d3151778286ad292682b9059d942023ee59cf2e54bf206386593a8/diff:/var/lib/docker/overlay2/1ed1b9c4ca90ea8e21b98be933b1a307c9945e60428cd98df7513bac7dba626e/diff:/var/lib/docker/overlay2/6c73bb7a3da281e6957fe2cb022550f99111f4b4827478a6b22de196e89e99de/diff","MergedDir":"/var/lib/docker/overlay2/b450e21916d2c3f9e08e7d53ebe38f9eaf87f0d4ca775b70732dc3bcace6cc12/merged","UpperDir":"/var/lib/docker/overlay2/b450e21916d2c3f9e08e7d53ebe38f9eaf87f0d4ca775b70732dc3bcace6cc12/diff","WorkDir":"/var/lib/docker/overlay2/b450e21916d2c3f9e08e7d53ebe38f9eaf87f0d4ca775b70732dc3bcace6cc12/work"},"Name":"overlay2"},"Volumes":{},"VolumesRW":{},"Config":{"Hostname":"23679b89055c","Domainname":"","User":"nobody","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["MONGODB_URI=mongodb://mongodb:27017/kontena_server","VAULT_KEY=531637872c310d01cd96d5371db13631f1e15d0a8eb206c1","VAULT_IV=b88e1e16efe95bd52d2aeb1770f591a77ea90ced77f33230","INITIAL_ADMIN_CODE=initialadmincode","CONTAINER_LOGS_CAPPED_SIZE=128","CONTAINER_STATS_CAPPED_SIZE=64","EVENT_LOGS_CAPPED_SIZE=32","WEB_CONCURRENCY=1","no_proxy=*.local,
+        169.254/16","PATH=/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","RACK_ENV=production"],"Cmd":["./run.sh"],"ArgsEscaped":true,"Image":"kontena/server:latest","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"9292/tcp":{}},"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"e8125f3e028054cd34e68902055da171cc1952f7cf6677eb4550be33e133c1e2","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{"9292/tcp":[{"HostIp":"0.0.0.0","HostPort":"8181"}]},"SandboxKey":"/var/run/docker/netns/e8125f3e0280","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"bb3e5f8d04edc14372d61c151904059fb45808c4af5fd84d785a9c403ed9d333","Gateway":"172.17.0.1","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"172.17.0.3","IPPrefixLen":16,"IPv6Gateway":"","MacAddress":"02:42:ac:11:00:03"}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:54 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/23679b89055c7bea95415dc01761d0cf305630fe80d5c17a74c3012754a77377?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:10:59 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:55 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-master-mongo/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:10:59 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef","Created":"2017-10-18T06:09:16.05493799Z","Path":"docker-entrypoint.sh","Args":["mongod"],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":10225,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:16.884237645Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:16dc6ae8085ee1891242caae955e14251caa72415e678063203ead560023d28d","ResolvConfPath":"/var/lib/docker/containers/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef/resolv.conf","HostnamePath":"/var/lib/docker/containers/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef/hostname","HostsPath":"/var/lib/docker/containers/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef/hosts","LogPath":"/var/lib/docker/containers/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef-json.log","Name":"/kontena-master-mongo","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":["kontena-master-db:/data/db"],"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"default","PortBindings":null,"RestartPolicy":{"Name":"unless-stopped","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/85bba71190c9c3e7a2c9716133face7136502dde9cb44b1eb2d0f48b1989ea3e-init/diff:/var/lib/docker/overlay2/1160bdc6e6172a4b799a68230a7e2ea490a4baccad3fb871ef56603c050466eb/diff:/var/lib/docker/overlay2/c606712fe85d27f0eaf2b2b6e68b686b967610da262c230b954f90ea496662e4/diff:/var/lib/docker/overlay2/ea056c0ad864325ecc7a60a551c0d9e869540570e0b42a6e35633a9c1e2ca88b/diff:/var/lib/docker/overlay2/c76a367651e8e27f9641c6f946a7d46aa017b68248fdc7c28f3e39a385f19f50/diff:/var/lib/docker/overlay2/59e7a37c90734653e8772dfd9e3ccd584fef1830493fc72076d0bd8b8900d6e3/diff:/var/lib/docker/overlay2/99b42d0a208209685e2a688f333cf0a59c83d35586090b183afbece0aa529b99/diff:/var/lib/docker/overlay2/40d7a5e8434250b058aefb4292d0b3c3352a3dfcbe070acab39de38d56f547c0/diff:/var/lib/docker/overlay2/ac3d1e9c08cf393f8f91f46492ae5c2e537a9eb4eccfc35568ec4365acbbcf95/diff:/var/lib/docker/overlay2/f699d4aba2b6506c67c84c94b57098e22d0deca149602571d47e2fd4c1485869/diff:/var/lib/docker/overlay2/0d85741f7257e7ad6dcc87abef87b79dea30f80df46404153cdfdb42a80aa89d/diff:/var/lib/docker/overlay2/f3319fd76ccb9e99b66717aa35f690e9b1d1a100eb0b571d3378a796943dc9ce/diff","MergedDir":"/var/lib/docker/overlay2/85bba71190c9c3e7a2c9716133face7136502dde9cb44b1eb2d0f48b1989ea3e/merged","UpperDir":"/var/lib/docker/overlay2/85bba71190c9c3e7a2c9716133face7136502dde9cb44b1eb2d0f48b1989ea3e/diff","WorkDir":"/var/lib/docker/overlay2/85bba71190c9c3e7a2c9716133face7136502dde9cb44b1eb2d0f48b1989ea3e/work"},"Name":"overlay2"},"Volumes":{"/data/configdb":"/var/lib/docker/volumes/57c03f0f67d263779486a8361fa64ba62b00b63881236ce3ef6749f268de36b1/_data","/data/db":"/var/lib/docker/volumes/kontena-master-db/_data"},"VolumesRW":{"/data/configdb":true,"/data/db":true},"Config":{"Hostname":"732fb508feea","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["no_proxy=*.local,
+        169.254/16","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","GOSU_VERSION=1.7","GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
+        \t42F3E95A2C4F08279C4960ADD68FA50FEA312927","MONGO_PACKAGE=mongodb-org","MONGO_REPO=repo.mongodb.org","MONGO_MAJOR=3.2","MONGO_VERSION=3.2.17"],"Cmd":["mongod"],"ArgsEscaped":true,"Image":"mongo:3.2","Volumes":{"/data/configdb":{},"/data/db":{}},"WorkingDir":"","Entrypoint":["docker-entrypoint.sh"],"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"27017/tcp":{}},"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"7e1b5786841d5c489990da1289b262e53d7e7300f6436dfc3196bcebe2139ea3","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{"27017/tcp":null},"SandboxKey":"/var/run/docker/netns/7e1b5786841d","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"d44791eea9794ba5debe013a32cd02e921749f2cb81d950b9deb19559a8f9549","Gateway":"172.17.0.1","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"172.17.0.2","IPPrefixLen":16,"IPv6Gateway":"","MacAddress":"02:42:ac:11:00:02"}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:55 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/732fb508feea560777fe9cdafc5c20a11bda2bac6745d50b24f106692c7103ef?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:10:59 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:55 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-agent/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:10:59 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b","Created":"2017-10-18T06:09:39.611222538Z","Path":"/app/bin/kontena-agent","Args":[],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":10443,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:40.14477469Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:948a132209c0529de0f713ba83bc299f71c50c917c94635a408d884273d117a6","ResolvConfPath":"/var/lib/docker/containers/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b/resolv.conf","HostnamePath":"/var/lib/docker/containers/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b/hostname","HostsPath":"/var/lib/docker/containers/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b/hosts","LogPath":"/var/lib/docker/containers/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b-json.log","Name":"/kontena-agent","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":["/var/run/docker.sock:/var/run/docker.sock"],"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"host","PortBindings":null,"RestartPolicy":{"Name":"unless-stopped","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/f0f5342cc298361abe676338ae36665f44cb9bff7d266af39d5bbf342f0c4d61-init/diff:/var/lib/docker/overlay2/1529c12d6cb8a37b8f93b50aaa80a89db51c9f6a46de94b0fca41114ea0fd973/diff:/var/lib/docker/overlay2/18f3341f4c0e1b95b2fda8eda66af41e004d0e0c7bfd4d893f154523bf3fa678/diff:/var/lib/docker/overlay2/67db2999a6e266cb56b95972c85af117c4cb6c2587523010e8dc658833b494e7/diff:/var/lib/docker/overlay2/79b6a6df73a4f4e40b6ea38d98ce197f28197fc13db9608d335151655c45b877/diff:/var/lib/docker/overlay2/b26cbf871c799b80ca3345053a72e4c847c45ec3401186ab605b5e05be1b9069/diff:/var/lib/docker/overlay2/6c73bb7a3da281e6957fe2cb022550f99111f4b4827478a6b22de196e89e99de/diff","MergedDir":"/var/lib/docker/overlay2/f0f5342cc298361abe676338ae36665f44cb9bff7d266af39d5bbf342f0c4d61/merged","UpperDir":"/var/lib/docker/overlay2/f0f5342cc298361abe676338ae36665f44cb9bff7d266af39d5bbf342f0c4d61/diff","WorkDir":"/var/lib/docker/overlay2/f0f5342cc298361abe676338ae36665f44cb9bff7d266af39d5bbf342f0c4d61/work"},"Name":"overlay2"},"Volumes":{"/var/run/docker.sock":"/var/run/docker.sock"},"VolumesRW":{"/var/run/docker.sock":true},"Config":{"Hostname":"moby","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["KONTENA_URI=http://localhost:8181","KONTENA_TOKEN=c8ee61bc4c19bbac3796947cc9f85a70","CADVISOR_IMAGE=google/cadvisor","CADVISOR_VERSION=v0.26.1","no_proxy=*.local,
+        169.254/16","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],"Cmd":["/app/bin/kontena-agent"],"ArgsEscaped":true,"Image":"kontena/agent:latest","Volumes":{"/var/run/docker.sock":{}},"WorkingDir":"/app","Entrypoint":null,"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":null,"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"2fee45827bbe2b22eee7f92adb389d3c879e19eb9b121de41c074e8c00ccf641","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{},"SandboxKey":"/var/run/docker/netns/default","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:55 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/036e3f69393335beaf878c74badfc52d99f90a9b513449959a1a41ec4aa0c53b?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-ipam-plugin/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71","Created":"2017-10-18T06:09:47.436379542Z","Path":"bundle","Args":["exec","thin","-a","127.0.0.1","-p","2275","-e","production","start"],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":11154,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:48.452233045Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:5cde4c798bbe32b4370c3a4d0b9cf9e810d85279fbf620997e09a1d452da4ac2","ResolvConfPath":"/var/lib/docker/containers/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71/resolv.conf","HostnamePath":"/var/lib/docker/containers/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71/hostname","HostsPath":"/var/lib/docker/containers/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71/hosts","LogPath":"/var/lib/docker/containers/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71-json.log","Name":"/kontena-ipam-plugin","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":["/run/docker/plugins/:/run/docker/plugins/","/var/run/docker.sock:/var/run/docker.sock"],"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"host","PortBindings":null,"RestartPolicy":{"Name":"always","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/307af467cbd7ab4d76a2966556a4f4d230e634f161a5021f4f45b1558f3882fa-init/diff:/var/lib/docker/overlay2/c2f2cde097bcde11f33ed3a9e6d17a1c6336b947eb51dbcca943aa3be6418ab3/diff:/var/lib/docker/overlay2/4099fbd4f1bb5529a650eff20160226008154b59e553721314fc1f2d171ce08c/diff:/var/lib/docker/overlay2/cd77b8eb4419909e44d50401bfb3b5d10eba567e82626ea34e38382d6449f92c/diff:/var/lib/docker/overlay2/43c6f0d1fda59bff6ab4dcfca43e9435bb27d1a18a5f4c976e9ea5988a906cce/diff:/var/lib/docker/overlay2/86df7b5acf7c8bcfdb879fcce29db8710e84498d59ba68c11252d5cf6fb06d19/diff:/var/lib/docker/overlay2/b9a2d88e694b07aea8737a6346770f27e5be6cc162f080f9a7f9955c16afdd8d/diff","MergedDir":"/var/lib/docker/overlay2/307af467cbd7ab4d76a2966556a4f4d230e634f161a5021f4f45b1558f3882fa/merged","UpperDir":"/var/lib/docker/overlay2/307af467cbd7ab4d76a2966556a4f4d230e634f161a5021f4f45b1558f3882fa/diff","WorkDir":"/var/lib/docker/overlay2/307af467cbd7ab4d76a2966556a4f4d230e634f161a5021f4f45b1558f3882fa/work"},"Name":"overlay2"},"Volumes":{"/run/docker/plugins":"/run/docker/plugins","/var/run/docker.sock":"/var/run/docker.sock"},"VolumesRW":{"/run/docker/plugins":true,"/var/run/docker.sock":true},"Config":{"Hostname":"moby","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["NODE_ID=1","LOG_LEVEL=1","ETCD_ENDPOINT=http://127.0.0.1:2379","KONTENA_IPAM_SUPERNET=10.80.0.0/12","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","RUBY_GC_HEAP_GROWTH_FACTOR=1.1","RUBY_GC_MALLOC_LIMIT=16000100","RUBY_GC_MALLOC_LIMIT_MAX=16000100","RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR=1.1","RUBY_GC_OLDMALLOC_LIMIT_MAX=16000100"],"Cmd":["bundle","exec","thin","-a","127.0.0.1","-p","2275","-e","production","start"],"Image":"kontena/ipam-plugin:0.2.2","Volumes":{"/run/docker/plugins":{},"/var/run/docker.sock":{}},"WorkingDir":"/app","Entrypoint":null,"OnBuild":null,"Labels":{},"StopSignal":"SIGTTIN","MacAddress":"","NetworkDisabled":false,"ExposedPorts":null,"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"849016501b1c7be305ce7d25721bf50340dc08eaf624ea63ee11d18995b255b0","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{},"SandboxKey":"/var/run/docker/netns/default","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:56 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/f02481887b0d6837b78c402a1df3130261c2f185a92079a67ee319b1b920fe71?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:56 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-etcd/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6","Created":"2017-10-18T06:09:47.934776274Z","Path":"/usr/bin/etcd","Args":["--name","node-1","--data-dir","/var/lib/etcd","--listen-client-urls","http://127.0.0.1:2379,http://10.81.0.1:2379,http://172.17.0.1:2379","--initial-cluster","node-1=http://10.81.0.1:2380","--listen-client-urls","http://127.0.0.1:2379,http://10.81.0.1:2379,http://172.17.0.1:2379","--listen-peer-urls","http://10.81.0.1:2380","--advertise-client-urls","http://10.81.0.1:2379","--initial-advertise-peer-urls","http://10.81.0.1:2380","--initial-cluster-token","local-kontena","--initial-cluster-state","new"],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":11219,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:48.685599728Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:f12fabf787131364271fa40b02bfb5c814aeefc59b45bab641d8da70d3333f67","ResolvConfPath":"/var/lib/docker/containers/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6/resolv.conf","HostnamePath":"/var/lib/docker/containers/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6/hostname","HostsPath":"/var/lib/docker/containers/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6/hosts","LogPath":"/var/lib/docker/containers/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6-json.log","Name":"/kontena-etcd","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":null,"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"host","PortBindings":null,"RestartPolicy":{"Name":"always","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":["kontena-etcd-data"],"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/cc7902560cc8d1017e3ee75c14c8edc8ee6e1d149df453a1fef3f00b834c01c6-init/diff:/var/lib/docker/overlay2/8e49ec86818d3f7a2ce755a902a58e6bb8643d0bffa1b16f11b7f78bfd9ea47a/diff:/var/lib/docker/overlay2/739e6f0227f1bee1d526e1f47dd09c1204d437c9f3197e8777c866c74f43cd79/diff:/var/lib/docker/overlay2/314216ad69fb3b2e72fbafda946a133b2e76bd5ca3881146d9dbc3c0c6f06d05/diff:/var/lib/docker/overlay2/3fe82f71f6754dfc7e9bb01ee8141b52825590281a8f5f3cf4d63280c5f2d808/diff","MergedDir":"/var/lib/docker/overlay2/cc7902560cc8d1017e3ee75c14c8edc8ee6e1d149df453a1fef3f00b834c01c6/merged","UpperDir":"/var/lib/docker/overlay2/cc7902560cc8d1017e3ee75c14c8edc8ee6e1d149df453a1fef3f00b834c01c6/diff","WorkDir":"/var/lib/docker/overlay2/cc7902560cc8d1017e3ee75c14c8edc8ee6e1d149df453a1fef3f00b834c01c6/work"},"Name":"overlay2"},"Volumes":{"/data":"/var/lib/docker/volumes/1aa08d93103b92bddb8b98f2a8fc68f2cc93fa8555fc54cd1ae8d17898ac90f6/_data","/var/lib/etcd":"/var/lib/docker/volumes/13cee347ff3a622edd245e62f790ab8920f5aa3bfb1b13789da51685053fa838/_data"},"VolumesRW":{"/data":true,"/var/lib/etcd":true},"Config":{"Hostname":"moby","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","ETCD_RELEASE=2.3.7"],"Cmd":["--name","node-1","--data-dir","/var/lib/etcd","--listen-client-urls","http://127.0.0.1:2379,http://10.81.0.1:2379,http://172.17.0.1:2379","--initial-cluster","node-1=http://10.81.0.1:2380","--listen-client-urls","http://127.0.0.1:2379,http://10.81.0.1:2379,http://172.17.0.1:2379","--listen-peer-urls","http://10.81.0.1:2380","--advertise-client-urls","http://10.81.0.1:2379","--initial-advertise-peer-urls","http://10.81.0.1:2380","--initial-cluster-token","local-kontena","--initial-cluster-state","new"],"Image":"kontena/etcd:2.3.7","Volumes":{"/data":{}},"WorkingDir":"","Entrypoint":["/usr/bin/etcd"],"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"2379/tcp":{},"2380/tcp":{}},"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"c27caac522be540418c2a5ea79d2ded7f4e974c434e0169f13d80930d1a22a08","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{},"SandboxKey":"/var/run/docker/netns/default","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:56 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/cea0fe44611fa26d60c04b0ef51588be2dde0ac11feb73041d6e5ff6ff142de6?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-etcd-data/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:00 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"2ce8ff7e6c9e8a3150afb8cef76977f0d8b6a7b4ddaa491678d5a7b3f629e921","Created":"2017-10-18T06:09:47.430045504Z","Path":"/usr/bin/etcd","Args":[],"State":{"Status":"created","Running":false,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":0,"ExitCode":0,"Error":"","StartedAt":"0001-01-01T00:00:00Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:f12fabf787131364271fa40b02bfb5c814aeefc59b45bab641d8da70d3333f67","ResolvConfPath":"","HostnamePath":"","HostsPath":"","LogPath":"","Name":"/kontena-etcd-data","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":null,"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"default","PortBindings":null,"RestartPolicy":{"Name":"","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/76525def447452b8e3226ac519b11017905b6ed3d52d84fef2d32667ac278f64-init/diff:/var/lib/docker/overlay2/8e49ec86818d3f7a2ce755a902a58e6bb8643d0bffa1b16f11b7f78bfd9ea47a/diff:/var/lib/docker/overlay2/739e6f0227f1bee1d526e1f47dd09c1204d437c9f3197e8777c866c74f43cd79/diff:/var/lib/docker/overlay2/314216ad69fb3b2e72fbafda946a133b2e76bd5ca3881146d9dbc3c0c6f06d05/diff:/var/lib/docker/overlay2/3fe82f71f6754dfc7e9bb01ee8141b52825590281a8f5f3cf4d63280c5f2d808/diff","MergedDir":"/var/lib/docker/overlay2/76525def447452b8e3226ac519b11017905b6ed3d52d84fef2d32667ac278f64/merged","UpperDir":"/var/lib/docker/overlay2/76525def447452b8e3226ac519b11017905b6ed3d52d84fef2d32667ac278f64/diff","WorkDir":"/var/lib/docker/overlay2/76525def447452b8e3226ac519b11017905b6ed3d52d84fef2d32667ac278f64/work"},"Name":"overlay2"},"Volumes":{"/data":"/var/lib/docker/volumes/1aa08d93103b92bddb8b98f2a8fc68f2cc93fa8555fc54cd1ae8d17898ac90f6/_data","/var/lib/etcd":"/var/lib/docker/volumes/13cee347ff3a622edd245e62f790ab8920f5aa3bfb1b13789da51685053fa838/_data"},"VolumesRW":{"/data":true,"/var/lib/etcd":true},"Config":{"Hostname":"2ce8ff7e6c9e","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","ETCD_RELEASE=2.3.7"],"Cmd":null,"ArgsEscaped":true,"Image":"kontena/etcd:2.3.7","Volumes":{"/data":{},"/var/lib/etcd":{}},"WorkingDir":"","Entrypoint":["/usr/bin/etcd"],"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"2379/tcp":{},"2380/tcp":{}},"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":null,"SandboxKey":"","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/2ce8ff7e6c9e8a3150afb8cef76977f0d8b6a7b4ddaa491678d5a7b3f629e921?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-cadvisor/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"ae4901cf61094cbf21b10c658c9a399dc3d922163bffd1d57b3e309d422013ab","Created":"2017-10-18T06:09:40.986105135Z","Path":"/usr/bin/cadvisor","Args":["-logtostderr","--docker_only","--listen_ip=127.0.0.1","--port=8989","--storage_duration=2m","--housekeeping_interval=10s","--disable_metrics=tcp,disk"],"State":{"Status":"created","Running":false,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":0,"ExitCode":128,"Error":"linux
+        mounts: path / is mounted on / but it is not a shared mount","StartedAt":"0001-01-01T00:00:00Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:73eceaae464de9390bdb9837544f151bf8babd5e008ecd15d7f2353afbed5220","ResolvConfPath":"/var/lib/docker/containers/ae4901cf61094cbf21b10c658c9a399dc3d922163bffd1d57b3e309d422013ab/resolv.conf","HostnamePath":"/var/lib/docker/containers/ae4901cf61094cbf21b10c658c9a399dc3d922163bffd1d57b3e309d422013ab/hostname","HostsPath":"/var/lib/docker/containers/ae4901cf61094cbf21b10c658c9a399dc3d922163bffd1d57b3e309d422013ab/hosts","LogPath":"","Name":"/kontena-cadvisor","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":["/:/rootfs:ro,rshared","/var/run:/var/run:rshared","/sys:/sys:ro,rshared","/var/lib/docker:/var/lib/docker:ro,rshared"],"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"host","PortBindings":null,"RestartPolicy":{"Name":"always","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":128,"Memory":268435456,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":536870912,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/25a1fd3b44c470aa02803305816751e3ec2377bb2012f465cc496ad7a51bbfd8-init/diff:/var/lib/docker/overlay2/652705d6fbaf6b7fa02467486b6feb3efc996318f82a7e8852786eacced41b6c/diff:/var/lib/docker/overlay2/441a242b18f35bd21dd448f6b3c0d3d873a50c5ee4f4704f9d19ea69012c593e/diff:/var/lib/docker/overlay2/267c803567740954bed13e5c7f0278bdecb862c3b7fdf920033c438b4402d0aa/diff","MergedDir":"/var/lib/docker/overlay2/25a1fd3b44c470aa02803305816751e3ec2377bb2012f465cc496ad7a51bbfd8/merged","UpperDir":"/var/lib/docker/overlay2/25a1fd3b44c470aa02803305816751e3ec2377bb2012f465cc496ad7a51bbfd8/diff","WorkDir":"/var/lib/docker/overlay2/25a1fd3b44c470aa02803305816751e3ec2377bb2012f465cc496ad7a51bbfd8/work"},"Name":"overlay2"},"Volumes":{"/rootfs":"/","/sys":"/sys","/var/lib/docker":"/var/lib/docker","/var/run":"/var/run"},"VolumesRW":{"/rootfs":false,"/sys":false,"/var/lib/docker":false,"/var/run":true},"Config":{"Hostname":"moby","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","GLIBC_VERSION=2.23-r3"],"Cmd":["--docker_only","--listen_ip=127.0.0.1","--port=8989","--storage_duration=2m","--housekeeping_interval=10s","--disable_metrics=tcp,disk"],"Image":"google/cadvisor:v0.26.1","Volumes":{"/rootfs":{},"/sys":{},"/var/lib/docker":{},"/var/run":{}},"WorkingDir":"","Entrypoint":["/usr/bin/cadvisor","-logtostderr"],"OnBuild":null,"Labels":{"io.kontena.agent.version":"1.4.0"},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"8080/tcp":{}},"VolumeDriver":"","Memory":268435456,"MemorySwap":536870912,"CpuShares":128,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"460118df6781ce298025e466e221ea692e870855be3b529ba2db255506ddbf6f","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":null,"SandboxKey":"/var/run/docker/netns/default","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/ae4901cf61094cbf21b10c658c9a399dc3d922163bffd1d57b3e309d422013ab?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/weave/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27","Created":"2017-10-18T06:09:43.480907065Z","Path":"/home/weave/weaver","Args":["--port","6783","--name","ce:42:2b:bd:96:13","--nickname","moby","--datapath","datapath","--ipalloc-range","","--dns-effective-listen-address","172.17.0.1","--dns-listen-address","172.17.0.1:53","--http-addr","127.0.0.1:6784","--status-addr","127.0.0.1:6782","--resolv-conf","/var/run/weave/etc/resolv.conf","--dns-domain","kontena.local","--conn-limit","0","--trusted-subnets",""],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":10746,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:44.074741484Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:fb3ebd19d38709e7867c5c4fa79096153b89a0e877046f052b18a7ca6394a0f6","ResolvConfPath":"/var/lib/docker/containers/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27/resolv.conf","HostnamePath":"/var/lib/docker/containers/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27/hostname","HostsPath":"/var/lib/docker/containers/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27/hosts","LogPath":"/var/lib/docker/containers/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27-json.log","Name":"/weave","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":["/etc:/var/run/weave/etc","/var/run/docker.sock:/var/run/docker.sock"],"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"host","PortBindings":{},"RestartPolicy":{"Name":"always","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":["weavedb"],"CapAdd":null,"CapDrop":null,"Dns":[],"DnsOptions":[],"DnsSearch":[],"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"host","Privileged":true,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":["label=disable"],"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":[],"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/035e7fbd0fea5cb17a986cde6696b1a797b05e80276c8e53fd830c56762cb7e5-init/diff:/var/lib/docker/overlay2/8cbe71a718eb7e8fed253d623498d98efb8bb44ef052477167dbb2bdb38a9c8e/diff:/var/lib/docker/overlay2/c84984bdd0d197349b24fb240178cef9b2f6ab5fbb7d21b0d6d6fb338489b49b/diff:/var/lib/docker/overlay2/1db692b7c0037fdfe264f43f5b762b743e8a0d1d90d41efe3a8d36bb7a867392/diff:/var/lib/docker/overlay2/b850f16234a38e1fa17bd33a157380043ec9a9cc7111e4387992c8da6476c076/diff:/var/lib/docker/overlay2/dd649dbaa4301eebd657fda24c8fbf59d262ac5507ac92fa3e04196beda72d37/diff:/var/lib/docker/overlay2/1b43b16cead08501c75728033e7269e4e36e8d9cbf8bdd67f986fb40f9950401/diff:/var/lib/docker/overlay2/c8139c04d1e02c1f54c10e7cff69fc2d3f049c9e2cd534c5490a0664e6c1c5c8/diff:/var/lib/docker/overlay2/83cf8922b8065de44c44dd5e0f2bf606e03e773620e4c03076e616653ed7f1c1/diff:/var/lib/docker/overlay2/1d860131a4b0b62dfcbeaeada38f1ccfab2eeca576767f75d4262b96d9468412/diff:/var/lib/docker/overlay2/87e70f56656a786e2e511886a58b71d58dd2ef9d1d9e1aac267bdb8ea662e443/diff:/var/lib/docker/overlay2/1c54d5f4e23a3cc26911ef69f735be7d808778e763f29335e555297a02980062/diff:/var/lib/docker/overlay2/90794e2ef4c61e234ccc5d65bcb40d4e57af4d3111bd5cfff52d85b9d16d4128/diff","MergedDir":"/var/lib/docker/overlay2/035e7fbd0fea5cb17a986cde6696b1a797b05e80276c8e53fd830c56762cb7e5/merged","UpperDir":"/var/lib/docker/overlay2/035e7fbd0fea5cb17a986cde6696b1a797b05e80276c8e53fd830c56762cb7e5/diff","WorkDir":"/var/lib/docker/overlay2/035e7fbd0fea5cb17a986cde6696b1a797b05e80276c8e53fd830c56762cb7e5/work"},"Name":"overlay2"},"Volumes":{"/var/run/docker.sock":"/var/run/docker.sock","/var/run/weave/etc":"/etc","/weavedb":"/var/lib/docker/volumes/927831064ad60264b6be617a2520ba49b2cc3c6ef2fc9d51bcfad0792ff96714/_data"},"VolumesRW":{"/var/run/docker.sock":true,"/var/run/weave/etc":true,"/weavedb":true},"Config":{"Hostname":"moby","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["WEAVE_PASSWORD=c8ee61bc4c19bbac3796947cc9f85a70","CHECKPOINT_DISABLE","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"],"Cmd":["--port","6783","--name","ce:42:2b:bd:96:13","--nickname","moby","--datapath","datapath","--ipalloc-range","","--dns-effective-listen-address","172.17.0.1","--dns-listen-address","172.17.0.1:53","--http-addr","127.0.0.1:6784","--status-addr","127.0.0.1:6782","--resolv-conf","/var/run/weave/etc/resolv.conf","--dns-domain","kontena.local","--conn-limit","0","--trusted-subnets",""],"Image":"weaveworks/weave:1.9.3","Volumes":null,"WorkingDir":"/home/weave","Entrypoint":["/home/weave/weaver"],"OnBuild":null,"Labels":{"maintainer":"Weaveworks
+        Inc <help@weave.works>","org.label-schema.description":"Weave Net creates
+        a virtual network that connects Docker containers across multiple hosts and
+        enables their automatic discovery","org.label-schema.name":"Weave Net","org.label-schema.url":"https://weave.works","org.label-schema.vcs-url":"https://github.com/weaveworks/weave","org.label-schema.vendor":"Weaveworks","works.weave.role":"system"},"StopSignal":"SIGTERM","MacAddress":"","NetworkDisabled":false,"ExposedPorts":null,"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"09d857edc79cb685d77dee294a888dc8b08ff97c904c9b7e0f343bdcc1afe36a","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{},"SandboxKey":"/var/run/docker/netns/default","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"","Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"","IPPrefixLen":0,"IPv6Gateway":"","MacAddress":""}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/8f3c97ea25b94f1fe88d49bfa57865c096c3abc66326873bf9eb6cf200ec6b27?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/containers/kontena-registry/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:01 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"Id":"9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63","Created":"2017-10-18T06:09:41.779293106Z","Path":"/entrypoint.sh","Args":["/etc/docker/registry/config.yml"],"State":{"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":10583,"ExitCode":0,"Error":"","StartedAt":"2017-10-18T06:09:42.875928699Z","FinishedAt":"0001-01-01T00:00:00Z"},"Image":"sha256:119bdf21a7fc9810b71e4762b5839e9dfa6f908c55bb24b870c436b7dcd10a11","ResolvConfPath":"/var/lib/docker/containers/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63/resolv.conf","HostnamePath":"/var/lib/docker/containers/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63/hostname","HostsPath":"/var/lib/docker/containers/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63/hosts","LogPath":"/var/lib/docker/containers/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63-json.log","Name":"/kontena-registry","RestartCount":0,"Driver":"overlay2","Platform":"linux","MountLabel":"","ProcessLabel":"","AppArmorProfile":"","ExecIDs":null,"HostConfig":{"Binds":null,"ContainerIDFile":"","LogConfig":{"Type":"json-file","Config":{}},"NetworkMode":"default","PortBindings":{"5000/tcp":[{"HostIp":"","HostPort":"5000"}]},"RestartPolicy":{"Name":"unless-stopped","MaximumRetryCount":0},"AutoRemove":false,"VolumeDriver":"","VolumesFrom":null,"CapAdd":null,"CapDrop":null,"Dns":null,"DnsOptions":null,"DnsSearch":null,"ExtraHosts":null,"GroupAdd":null,"IpcMode":"shareable","Cgroup":"","Links":null,"OomScoreAdj":0,"PidMode":"","Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"SecurityOpt":null,"UTSMode":"","UsernsMode":"","ShmSize":67108864,"Runtime":"runc","ConsoleSize":[0,0],"Isolation":"","CpuShares":0,"Memory":0,"NanoCpus":0,"CgroupParent":"","BlkioWeight":0,"BlkioWeightDevice":null,"BlkioDeviceReadBps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteIOps":null,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpusetCpus":"","CpusetMems":"","Devices":null,"DeviceCgroupRules":null,"DiskQuota":0,"KernelMemory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":null,"OomKillDisable":false,"PidsLimit":0,"Ulimits":null,"CpuCount":0,"CpuPercent":0,"IOMaximumIOps":0,"IOMaximumBandwidth":0},"GraphDriver":{"Data":{"LowerDir":"/var/lib/docker/overlay2/f7e669f2e35c5402f58cf0d2448b7dc0dcdf3f05b67e04f72a552e6118d6a794-init/diff:/var/lib/docker/overlay2/db883d7e6c140fb6dc7a0445b8eea0c2af278abf8d2e5401b393476bdf985370/diff:/var/lib/docker/overlay2/358ddd5ed7559191db259361c2c84741e344a8ac8174b1d6086c114101a23c0f/diff:/var/lib/docker/overlay2/c8d51a2c19cf4fdbc0362d4d68306022c5bc8bb307fbb5afcd8cfd9961b6cd91/diff:/var/lib/docker/overlay2/ef6dfee6fac6c15d04f4f691209a16f53d459438584278e0e88769e3d28de032/diff:/var/lib/docker/overlay2/4d793e2792303e119a65f44884b823755a8c458b1c31a95f6360a1c375ec1b0b/diff:/var/lib/docker/overlay2/901fcc9b594a0fe29d9e1e1f53a75e97ac36f8a42eaceeda15c9af05e9f72fe8/diff","MergedDir":"/var/lib/docker/overlay2/f7e669f2e35c5402f58cf0d2448b7dc0dcdf3f05b67e04f72a552e6118d6a794/merged","UpperDir":"/var/lib/docker/overlay2/f7e669f2e35c5402f58cf0d2448b7dc0dcdf3f05b67e04f72a552e6118d6a794/diff","WorkDir":"/var/lib/docker/overlay2/f7e669f2e35c5402f58cf0d2448b7dc0dcdf3f05b67e04f72a552e6118d6a794/work"},"Name":"overlay2"},"Volumes":{"/var/lib/registry":"/var/lib/docker/volumes/8aec9711f01d646c27f4991c1de621fcce3f83db378baf8c17a0b5717bde8d93/_data"},"VolumesRW":{"/var/lib/registry":true},"Config":{"Hostname":"9850fa25c874","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["no_proxy=*.local,
+        169.254/16","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","REGISTRY_STORAGE_DELETE_ENABLED=true"],"Cmd":["/etc/docker/registry/config.yml"],"ArgsEscaped":true,"Image":"kontena/registry:2.6.2","Volumes":{"/var/lib/registry":{}},"WorkingDir":"","Entrypoint":["/entrypoint.sh"],"OnBuild":null,"Labels":{},"MacAddress":"","NetworkDisabled":false,"ExposedPorts":{"5000/tcp":{}},"VolumeDriver":"","Memory":0,"MemorySwap":0,"CpuShares":0,"Cpuset":""},"NetworkSettings":{"Bridge":"","SandboxID":"b68f4546df767371e47e8d60cad87fbbf442edc2a7b95b2800c22e577de387f0","HairpinMode":false,"LinkLocalIPv6Address":"","LinkLocalIPv6PrefixLen":0,"Ports":{"5000/tcp":[{"HostIp":"0.0.0.0","HostPort":"5000"}]},"SandboxKey":"/var/run/docker/netns/b68f4546df76","SecondaryIPAddresses":null,"SecondaryIPv6Addresses":null,"EndpointID":"4d0aec76a42b30b6ed252372652350514c6115f0cf49800e69dcc22777c5a59d","Gateway":"172.17.0.1","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"IPAddress":"172.17.0.4","IPPrefixLen":16,"IPv6Gateway":"","MacAddress":"02:42:ac:11:00:04"}}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:57 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/containers/9850fa25c874bb586b46c148e17f95f06bcd2b2fb2978790de5cd106b5d15a63?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:58 GMT
+- request:
+    method: get
+    uri: http://unix/v1.16/volumes/kontena-master-db
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Api-Version:
+      - '1.32'
+      Content-Length:
+      - '187'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 18 Oct 2017 06:11:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: '{"CreatedAt":"2017-10-18T06:10:19Z","Driver":"local","Labels":null,"Mountpoint":"/var/lib/docker/volumes/kontena-master-db/_data","Name":"kontena-master-db","Options":{},"Scope":"local"}
+
+'
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:58 GMT
+- request:
+    method: delete
+    uri: http://unix/v1.16/volumes/kontena-master-db
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.33.6
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Api-Version:
+      - '1.32'
+      Date:
+      - Wed, 18 Oct 2017 06:11:02 GMT
+      Docker-Experimental:
+      - 'true'
+      Ostype:
+      - linux
+      Server:
+      - Docker/17.09.0-ce (linux)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Oct 2017 06:10:58 GMT
+recorded_with: VCR 3.0.3

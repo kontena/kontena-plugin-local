@@ -5,4 +5,6 @@ gemspec
 
 group :development do
   gem 'rspec'
+  gem 'webmock'
+  gem 'vcr'
 end
