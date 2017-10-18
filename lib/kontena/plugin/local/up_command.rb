@@ -15,8 +15,8 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
 
     puts ""
     puts ""
-    puts "  Kontena Platform Master: #{Kontena.pastel.green.on_black('http://localhost:8181')}"
-    puts "  Kontena Image Registry: #{Kontena.pastel.green.on_black('http://localhost:5000')}"
+    puts "  Kontena Platform Master: #{Kontena.pastel.green.on_black("http://#{docker_uri.host}:8181")}"
+    puts "  Kontena Image Registry: #{Kontena.pastel.green.on_black("http://#{docker_uri.host}:5000")}"
     puts ""
     puts "  Kontena CLI is configured to use local installation, have fun!!!"
   end
@@ -81,7 +81,7 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
   def wait_master_response
     spinner "Waiting for #{pastel.cyan('master')} to start" do
       begin
-        while Excon.get('http://localhost:8181').status != 200
+        while Excon.get("http://#{docker_uri.host}:8181").status != 200
           sleep 2
         end
       rescue
@@ -96,7 +96,7 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
     Kontena.run!([
       'master', 'login', '--name', 'local-kontena',
       '--code', 'initialadmincode', '--silent',
-      'http://localhost:8181'
+      "http://#{docker_uri.host}:8181"
     ])
   end
 
@@ -163,5 +163,13 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
     spinner "Pulling container image #{pastel.cyan(image)}" do
       Docker::Image.create('fromImage' => image)
     end
+  end
+
+  def docker_uri
+    if @docker_uri.nil?
+      @docker_uri = URI.parse(ENV['DOCKER_HOST'] || 'tcp://localhost:2376')
+    end
+
+    @docker_uri
   end
 end
