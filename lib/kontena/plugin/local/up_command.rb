@@ -67,7 +67,7 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
         'HostConfig' => {
           'Links' => ['kontena-master-mongo:mongodb'],
           'PortBindings' => {
-            '9292/tcp': [
+            '9292/tcp' => [
               {'HostPort' => '8181'}
             ]
           },
@@ -148,7 +148,7 @@ class Kontena::Plugin::Local::UpCommand < Kontena::Command
         },
         'HostConfig' => {
           'PortBindings' => {
-            '5000/tcp': [
+            '5000/tcp' => [
               {'HostPort' => '5000'}
             ]
           },
